@@ -1,3 +1,12 @@
+# Typing Test
+### A typing speed test built using ReactJS. View your words-per-minute(WPM) score as you type along with different passages from The Lord of the Rings.
+
+Followed Chigabiga's YouTube tutorial.
+
+## Screenshots
+![home](url)
+![home](url)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -1,24 +1,16 @@
 export default () => {
   const texts = [
-    "Here's to the crazy ones. The misfits. The rebels. The troublemakers."
-    + " The round pegs in the square holes. The ones who see things differently."
-    + " They're not fond of rules. And they have no respect for the status quo."
-    + " You can quote them, disagree with them, glorify or vilify them. About the only thing"
-    + " you can't do is ignore them. Because they change things. They push the human race forward. And"
-    + " while some may see them as the crazy ones, we see genius. Because the people who are crazy"
-    + " enough to think they can change the world, are the ones who do.",
+    "When Mr. Bilbo Baggins of Bag End announced that he would shortly be celebrating his eleventy-first birthday with a party of special magnificence, there was much talk and excitement in Hobbiton.",
 
-    "I believe that everything happens for a reason. People change so that you can learn to let go,"
-    + " things go wrong so that you appreciate them when they're right, you believe lies so you eventually"
-    + " learn to trust no one but yourself, and sometimes"
-    + " good things fall apart so better things can fall together.",
-
-    "To love at all is to be vulnerable. Love anything and your heart will be wrung and possibly broken. If"
-    + " you want to make sure of keeping it intact you must give it to no one, not even an animal."
-    + " Wrap it carefully round with hobbies and little luxuries; avoid all entanglements. Lock it up safe"
-    + " in the casket or coffin of your selfishness. But in that casket, safe, dark, motionless, airless"
-    + " will change. It will not be broken; it will become unbreakable, impenetrable, irredeemable."
-    + " To love is to be vulnerable"
+    "Bilbo was very rich and very peculiar, and had been the wonder of the Shire for sixty years, ever since his remarkable disappearance and unexpected return. The riches he had brought back from his travels had now become a local legend, and it was popularly believed, whatever the old folk might say, that the Hill at Bag End was full of tunnels stuffed with treasure. And if that was not enough for fame, there was also his prolonged vigour to marvel at. Time wore on, but it seemed to have little effect on Mr. Baggins. At ninety he was much the same as at fifty. At ninety-nine they began to call him well-preserved; but unchanged would have been nearer the mark. There were some that shook their heads and thought this was too much of a good thing; it seemed unfair that anyone should possess (apparently) perpetual youth as well as (reputedly) inexhaustible wealth.",
+    
+    "But so far trouble had not come; and as Mr. Baggins was generous with his money, most people were willing to forgive him his oddities and his good fortune. He remained on visiting terms with his relatives (except, of course, the Sackville-Bagginses), and he had many devoted admirers among the hobbits of poor and unimportant families. But he had no close friends, until some of his younger cousins began to grow up.",
+    
+    `The eldest of these, and Bilbo's favourite, was young Frodo Baggins. When Bilbo was ninety-nine he adopted Frodo as his heir, and brought him to live at Bag End; and the hopes of the Sackville- Bagginses were finally dashed. Bilbo and Frodo happened to have the same birthday, September 22nd. "You had better come and live here, Frodo my lad," said Bilbo one day; "and then we can celebrate our birthday-parties comfortably together." At that time Frodo was still in his tweens, as the hobbits called the irresponsible twenties between childhood and coming of age at thirty-three.`,
+    
+    `Twelve more years passed. Each year the Bagginses had given very lively combined birthday-parties at Bag End; but now it was understood that something quite exceptional was being planned for that autumn. Bilbo was going to be eleventy-one, 111, a rather curious number, and a very respectable age for a hobbit (the Old Took himself had only reached 130); and Frodo was going to be thirty- three, 33, an important number: the date of his "coming of age".`,
+    
+    "Tongues began to wag in Hobbiton and Bywater; and rumour of the coming event travelled all over the Shire. The history and character of Mr. Bilbo Baggins became once again the chief topic of conversation; and the older folk suddenly found their reminiscences in welcome demand."
   ];
   return texts[Math.floor(Math.random()*texts.length)];
 }

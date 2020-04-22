@@ -59,20 +59,23 @@ class App extends Component {
   render() {
     return (
       <div className='container mt-5 mb-5'>
+        <h1 className='col-md-6 offset-md-3 text-center text-primary'>Test Your Speed</h1>
         <div className='row'>
-          <div className='col-md-6 offset-md-3'>
+          <div className='mx-auto'>
             <Preview text={this.state.text} userInput={this.state.userInput}/>
             <textarea
-              className='form-control mb-3'
+              className='form-control mb-3 border border-primary'
               placeholder='Start typing...'
               value={this.state.userInput}
               onChange={this.onUserInputChange}
               readOnly={this.state.finished}
+              style={{fontSize: '25px'}}
             >
             </textarea>
             <Speed symbols={this.state.symbols} sec={this.state.sec}/>
             <div className='text-right'>
-              <button className='btn btn-light' onClick={this.onRestart}>Restart</button>
+              <button className='btn btn-primary mr-2' onClick={this.onRestart}>Restart</button>
+              <button className='btn btn-primary' onClick={() => window.location.reload()}>Next</button>
             </div>
           </div>
 
