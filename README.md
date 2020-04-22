@@ -4,8 +4,9 @@
 Followed Chigabiga's YouTube tutorial.
 
 ## Screenshots
-![home](url)
-![home](url)
+![home](https://github.com/QuintonEL/Typing-Test/blob/master/docs/home.png?raw=true)
+### Each character will turn green if correctly typed and red if incorrect
+![home](https://github.com/QuintonEL/Typing-Test/blob/master/docs/typing.png?raw=true)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
