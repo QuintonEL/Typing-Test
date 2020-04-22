@@ -5,7 +5,11 @@ import Speed from './components/Speed';
 
 const initialState = {
   text: 'test',
-  userInput: ''
+  userInput: '',
+  symbols: 0,
+  sec: 0,
+  started: false, 
+  finished: false,
 }
 
 class App extends Component {
@@ -18,9 +22,27 @@ class App extends Component {
 
   onUserInputChange = (e) => {
     const value = e.target.value;
+    this.setTimer();
     this.setState({
-      userInput: value
+      userInput: value,
+      symbols: this.countCorrectSymbols(value)
     });
+  }
+
+  countCorrectSymbols(userInput) {
+    const text = this.state.text.replace(' ', '');
+    return userInput.replace(' ', '').split('').filter((s, i) => s === text[i]).length;
+  }
+
+  setTimer() {
+    if(!this.state.started) {
+      this.setState({started: true});
+      this.interval = setInterval(() => {
+        this.setState(prevProps => {
+          return {sec: prevProps.sec + 1}
+        })
+      }, 1000)
+    }
   }
 
   render() {
@@ -36,7 +58,7 @@ class App extends Component {
               onChange={this.onUserInputChange}
             >
             </textarea>
-            <Speed />
+            <Speed symbols={this.state.symbols} sec={this.state.sec}/>
             <div className='text-right'>
               <button className='btn btn-light' onClick={this.onRestart}>Restart</button>
             </div>
