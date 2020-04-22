@@ -1,10 +1,11 @@
 import React, { Component }from 'react';
 import Preview from './components/Preview'
 import Speed from './components/Speed';
+import getText from './components/getText';
 
 
 const initialState = {
-  text: 'test',
+  text: getText(),
   userInput: '',
   symbols: 0,
   sec: 0,
