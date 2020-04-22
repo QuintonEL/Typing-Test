@@ -23,10 +23,20 @@ class App extends Component {
   onUserInputChange = (e) => {
     const value = e.target.value;
     this.setTimer();
+    this.onFinish(value);
     this.setState({
       userInput: value,
       symbols: this.countCorrectSymbols(value)
     });
+  }
+
+  onFinish(userInput) {
+    if(userInput === this.state.text) {
+      clearInterval(this.interval);
+      this.setState({
+        finished: true
+      })
+    }
   }
 
   countCorrectSymbols(userInput) {
@@ -56,6 +66,7 @@ class App extends Component {
               placeholder='Start typing...'
               value={this.state.userInput}
               onChange={this.onUserInputChange}
+              readOnly={this.state.finished}
             >
             </textarea>
             <Speed symbols={this.state.symbols} sec={this.state.sec}/>
