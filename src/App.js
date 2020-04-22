@@ -10,9 +10,10 @@ class App extends Component {
               className='form-control mb-3'
               placeholder='Start typing...'
             >
-
             </textarea>
-
+            <div className='text-right'>
+              <button className='btn btn-light'>Restart</button>
+            </div>
           </div>
 
         </div>
